@@ -1,4 +1,4 @@
-package com.cts.model;
+package com.cityworks.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -38,4 +38,5 @@ public class WorkOrder {
 
     @Column(name = "status")
     private String status;
+
 }

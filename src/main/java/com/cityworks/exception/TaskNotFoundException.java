@@ -1,4 +1,4 @@
-package com.cts.exception;
+package com.cityworks.exception;
 
 public class TaskNotFoundException extends RuntimeException{
     public TaskNotFoundException(String message) {
