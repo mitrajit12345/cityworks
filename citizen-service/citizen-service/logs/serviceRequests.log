@@ -1,0 +1,93 @@
+2026-04-06T11:45:04.675+05:30  INFO 20620 --- [main] c.c.c.CitizenServiceApplication          : Starting CitizenServiceApplication using Java 21.0.2 with PID 20620 (C:\City Works\citizen-service\citizen-service\target\classes started by 2483460 in C:\City Works\citizen-service\citizen-service)
+2026-04-06T11:45:04.678+05:30 DEBUG 20620 --- [main] c.c.c.CitizenServiceApplication          : Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-06T11:45:04.678+05:30  INFO 20620 --- [main] c.c.c.CitizenServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-04-06T11:45:05.454+05:30  INFO 20620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T11:45:05.519+05:30  INFO 20620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-04-06T11:45:06.071+05:30  INFO 20620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-06T11:45:06.083+05:30  INFO 20620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T11:45:06.083+05:30  INFO 20620 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-06T11:45:06.127+05:30  INFO 20620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T11:45:06.127+05:30  INFO 20620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1365 ms
+2026-04-06T11:45:06.295+05:30  INFO 20620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T11:45:06.388+05:30  INFO 20620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-06T11:45:06.431+05:30  INFO 20620 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T11:45:06.748+05:30  INFO 20620 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T11:45:06.780+05:30  INFO 20620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T11:45:07.214+05:30  INFO 20620 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16fc5622
+2026-04-06T11:45:07.218+05:30  INFO 20620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T11:45:07.275+05:30  WARN 20620 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T11:45:07.288+05:30  INFO 20620 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-06T11:45:08.107+05:30  INFO 20620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T11:45:08.164+05:30  INFO 20620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T11:45:08.370+05:30  WARN 20620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T11:45:08.910+05:30  INFO 20620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-04-06T11:45:08.917+05:30  INFO 20620 --- [main] c.c.c.CitizenServiceApplication          : Started CitizenServiceApplication in 4.739 seconds (process running for 5.637)
+2026-04-06T11:45:38.241+05:30  INFO 20620 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T11:45:38.241+05:30  INFO 20620 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T11:45:38.242+05:30  INFO 20620 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-06T11:45:38.345+05:30  INFO 20620 --- [http-nio-8081-exec-2] c.c.c.aspect.LoggingAspect               : Entering: List com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getAllRequests()
+2026-04-06T11:45:38.552+05:30  INFO 20620 --- [http-nio-8081-exec-2] c.c.c.aspect.LoggingAspect               : Exiting: List com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getAllRequests() Result: [ServiceRequestDTO(requestId=1, citizenId=1, assetId=101, description=Street light not working, submittedAt=2026-03-18T16:25:22.356314, status=PENDING), ServiceRequestDTO(requestId=2, citizenId=1, assetId=101, description=Street light not working, submittedAt=2026-03-18T16:25:44.132783, status=PENDING), ServiceRequestDTO(requestId=3, citizenId=1, assetId=101, description=Street light not working, submittedAt=2026-03-18T16:25:59.287309, status=PENDING), ServiceRequestDTO(requestId=4, citizenId=10, assetId=1034, description=Street light not workin, submittedAt=2026-03-24T15:03:13.160401, status=PENDING), ServiceRequestDTO(requestId=5, citizenId=11, assetId=1034, description=Street light not workin, submittedAt=2026-03-26T10:20:55.467505, status=PENDING), ServiceRequestDTO(requestId=6, citizenId=12, assetId=11212, description=Street light not working, submittedAt=2026-03-27T09:16:37.427107, status=PENDING), ServiceRequestDTO(requestId=7, citizenId=12, assetId=12334, description=, submittedAt=2026-03-27T09:27:33.693453, status=PENDING), ServiceRequestDTO(requestId=8, citizenId=12, assetId=12334, description=Street light not working, submittedAt=2026-03-27T09:55:40.025176, status=PENDING), ServiceRequestDTO(requestId=9, citizenId=13, assetId=123234, description=Street light not working, submittedAt=2026-03-27T10:12:52.653561, status=PENDING), ServiceRequestDTO(requestId=10, citizenId=13, assetId=123234, description=Street light not working, submittedAt=2026-03-30T14:45:46.324552, status=PENDING)]
+2026-04-06T11:46:11.428+05:30  INFO 20620 --- [http-nio-8081-exec-3] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.createRequest(ServiceRequestDTO)
+2026-04-06T11:46:11.522+05:30  INFO 20620 --- [http-nio-8081-exec-3] c.c.c.aspect.LoggingAspect               : Exiting: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.createRequest(ServiceRequestDTO) Result: ServiceRequestDTO(requestId=13, citizenId=17, assetId=18, description=Pot hole on road no. 15, submittedAt=2026-04-06T11:46:11.429769100, status=PENDING)
+2026-04-06T11:46:28.441+05:30  INFO 20620 --- [http-nio-8081-exec-6] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long)
+2026-04-06T11:46:28.463+05:30 ERROR 20620 --- [http-nio-8081-exec-6] c.c.c.aspect.LoggingAspect               : Exception in ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long): Request not found with id: 16
+2026-04-06T11:46:34.124+05:30  INFO 20620 --- [http-nio-8081-exec-5] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long)
+2026-04-06T11:46:34.130+05:30 ERROR 20620 --- [http-nio-8081-exec-5] c.c.c.aspect.LoggingAspect               : Exception in ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long): Request not found with id: 17
+2026-04-06T11:46:48.317+05:30  INFO 20620 --- [http-nio-8081-exec-4] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long)
+2026-04-06T11:46:48.323+05:30  INFO 20620 --- [http-nio-8081-exec-4] c.c.c.aspect.LoggingAspect               : Exiting: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long) Result: ServiceRequestDTO(requestId=13, citizenId=17, assetId=18, description=Pot hole on road no. 15, submittedAt=2026-04-06T11:46:11.429769, status=PENDING)
+2026-04-06T11:47:20.882+05:30  INFO 20620 --- [http-nio-8081-exec-7] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.approveRequest(Long)
+2026-04-06T11:47:20.915+05:30  INFO 20620 --- [http-nio-8081-exec-7] c.c.c.aspect.LoggingAspect               : Exiting: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.approveRequest(Long) Result: ServiceRequestDTO(requestId=13, citizenId=17, assetId=18, description=Pot hole on road no. 15, submittedAt=2026-04-06T11:46:11.429769, status=APPROVED)
+2026-04-06T11:47:27.587+05:30  INFO 20620 --- [http-nio-8081-exec-8] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long)
+2026-04-06T11:47:27.593+05:30  INFO 20620 --- [http-nio-8081-exec-8] c.c.c.aspect.LoggingAspect               : Exiting: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.getById(Long) Result: ServiceRequestDTO(requestId=13, citizenId=17, assetId=18, description=Pot hole on road no. 15, submittedAt=2026-04-06T11:46:11.429769, status=APPROVED)
+2026-04-06T11:47:37.755+05:30  INFO 20620 --- [http-nio-8081-exec-9] c.c.c.aspect.LoggingAspect               : Entering: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.rejectRequest(Long)
+2026-04-06T11:47:37.774+05:30  INFO 20620 --- [http-nio-8081-exec-9] c.c.c.aspect.LoggingAspect               : Exiting: ServiceRequestDTO com.cityworks.citizen_service.service.ServiceRequestServiceImpl.rejectRequest(Long) Result: ServiceRequestDTO(requestId=13, citizenId=17, assetId=18, description=Pot hole on road no. 15, submittedAt=2026-04-06T11:46:11.429769, status=REJECTED)
+2026-04-06T11:47:53.718+05:30  INFO 20620 --- [http-nio-8081-exec-10] c.c.c.aspect.LoggingAspect               : Entering: void com.cityworks.citizen_service.service.ServiceRequestServiceImpl.delete(Long)
+2026-04-06T11:47:53.738+05:30  INFO 20620 --- [http-nio-8081-exec-10] c.c.c.aspect.LoggingAspect               : Exiting: void com.cityworks.citizen_service.service.ServiceRequestServiceImpl.delete(Long) Result: null
+2026-04-06T11:48:05.400+05:30  INFO 20620 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-06T11:48:05.406+05:30  INFO 20620 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-06T11:48:05.409+05:30  INFO 20620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T11:48:05.411+05:30  INFO 20620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T11:48:05.419+05:30  INFO 20620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:26:00.149+05:30  INFO 24428 --- [main] c.c.c.CitizenServiceApplication          : Starting CitizenServiceApplication using Java 21.0.2 with PID 24428 (C:\City Works\citizen-service\citizen-service\target\classes started by 2483460 in C:\City Works\citizen-service\citizen-service)
+2026-04-06T15:26:00.152+05:30 DEBUG 24428 --- [main] c.c.c.CitizenServiceApplication          : Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-04-06T15:26:00.152+05:30  INFO 24428 --- [main] c.c.c.CitizenServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-04-06T15:26:01.009+05:30  INFO 24428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:26:01.079+05:30  INFO 24428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2026-04-06T15:26:01.860+05:30  INFO 24428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-06T15:26:01.884+05:30  INFO 24428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:26:01.884+05:30  INFO 24428 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-06T15:26:01.948+05:30  INFO 24428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:26:01.948+05:30  INFO 24428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1737 ms
+2026-04-06T15:26:02.172+05:30  INFO 24428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:26:02.295+05:30  INFO 24428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-06T15:26:02.364+05:30  INFO 24428 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:26:02.776+05:30  INFO 24428 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:26:02.824+05:30  INFO 24428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:26:03.443+05:30  INFO 24428 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5891b7c5
+2026-04-06T15:26:03.443+05:30  INFO 24428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:26:03.555+05:30  WARN 24428 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:26:03.585+05:30  INFO 24428 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-06T15:26:04.702+05:30  INFO 24428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:26:04.805+05:30  INFO 24428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:26:05.154+05:30  WARN 24428 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:26:06.010+05:30  INFO 24428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-04-06T15:26:06.013+05:30  INFO 24428 --- [main] c.c.c.CitizenServiceApplication          : Started CitizenServiceApplication in 6.499 seconds (process running for 7.402)
+2026-04-06T15:26:24.959+05:30  INFO 24428 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-06T15:26:24.977+05:30  INFO 24428 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-06T15:26:24.986+05:30  INFO 24428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:26:24.992+05:30  INFO 24428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:26:25.008+05:30  INFO 24428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
